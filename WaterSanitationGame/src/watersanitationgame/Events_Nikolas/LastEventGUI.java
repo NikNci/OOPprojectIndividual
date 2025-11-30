@@ -9,7 +9,7 @@ package watersanitationgame.Events_Nikolas;
  * @author NIKOLAS MISINS
  */
 
-import watersanitationgame.Ending_Jesse.EndingGUI;
+//import watersanitationgame.Ending_Jesse.EndingGUI; COMMENTED OUT BECAUSE ITS AN INDIVIDUAL SECTION ONLY UPLOAD
 
 public class LastEventGUI extends javax.swing.JFrame {
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(LastEventGUI.class.getName());
@@ -82,9 +82,14 @@ public class LastEventGUI extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void ProceedBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ProceedBTNActionPerformed
+        /*
         EndingGUI section3 = new EndingGUI(saveIndex);
         section3.setVisible(true);
         dispose();
+        */
+        
+        //for the purpose of the individual section, this button just closes the whole project
+        System.exit(0);
         
     }//GEN-LAST:event_ProceedBTNActionPerformed
 

@@ -9,13 +9,19 @@ package watersanitationgame.Events_Nikolas;
  * @author NIKOLAS MISINS
  */
 
-//import watersanitationgame.Ending_Jesse.EndingGUI; in my individual portion of this group project, this is not needed
+import watersanitationgame.Ending_Jesse.EndingGUI;
 
 public class LastEventGUI extends javax.swing.JFrame {
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(LastEventGUI.class.getName());
 
-    public LastEventGUI() {
+    private int saveIndex;
+    public LastEventGUI(int saveIndex) {
+        this.saveIndex=saveIndex;
         initComponents();
+    }
+
+    private LastEventGUI() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
     /**
@@ -76,13 +82,9 @@ public class LastEventGUI extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void ProceedBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ProceedBTNActionPerformed
-        /* commented out because as per being an individual section, I have no need to call section 3
-        EndingGUI section3 = new EndingGUI();
+        EndingGUI section3 = new EndingGUI(saveIndex);
         section3.setVisible(true);
         dispose();
-        */
-        
-        System.exit(0);
         
     }//GEN-LAST:event_ProceedBTNActionPerformed
 
